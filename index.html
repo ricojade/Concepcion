@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Nova | Creative Developer</title>
+  <title>Rico Jade Concepcion | Portfolio</title>
   <style>
+    /* ====== GLOBAL STYLES ====== */
     * {
       margin: 0;
       padding: 0;
@@ -13,13 +14,15 @@
     }
 
     body {
-      background-color: #0f111a;
-      color: #fff;
+      background-color: #1a000d; /* Deep maroon background */
+      color: #f8f3e8; /* Light golden white text */
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
 
+    /* ====== HEADER ====== */
     header {
-      background: #151829;
+      background: linear-gradient(90deg, #3b0000, #5c0a0a);
       padding: 20px 50px;
       display: flex;
       justify-content: space-between;
@@ -27,25 +30,30 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 4px 15px rgba(255, 215, 0, 0.15);
     }
 
     header h1 {
       font-size: 1.8rem;
-      color: #00d1ff;
+      color: #ffd700; /* Gold */
+      letter-spacing: 1px;
     }
 
     nav a {
-      color: #fff;
-      margin-left: 20px;
+      color: #f8f3e8;
+      margin-left: 25px;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s;
+      transition: color 0.3s, border-bottom 0.3s;
     }
 
     nav a:hover {
-      color: #00d1ff;
+      color: #ffd700;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 3px;
     }
 
+    /* ====== HERO SECTION ====== */
     .hero {
       height: 90vh;
       display: flex;
@@ -53,66 +61,132 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(135deg, #111428, #0f1a3d);
+      background: linear-gradient(135deg, #2e0000, #480909);
+      color: #f8f3e8;
+      padding: 0 20px;
     }
 
     .hero h2 {
       font-size: 3rem;
       margin-bottom: 10px;
+      color: #ffd700;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     }
 
     .hero p {
       max-width: 600px;
-      color: #ccc;
+      color: #e6d9b8;
+      font-size: 1.1rem;
     }
 
+    /* ====== SECTIONS ====== */
     .section {
       padding: 80px 50px;
       max-width: 1000px;
       margin: auto;
     }
 
+    .section h2 {
+      color: #ffd700;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: "";
+      width: 80px;
+      height: 3px;
+      background: #ffd700;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ====== ABOUT ====== */
+    .about p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #f0e6c0;
+    }
+
+    /* ====== SKILLS ====== */
     .skills ul {
       list-style: none;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 10px;
+      gap: 15px;
+      margin-top: 30px;
     }
 
     .skills li {
-      background: #1a1f3b;
-      padding: 10px 15px;
-      border-radius: 5px;
+      background: #330000;
+      padding: 12px 15px;
+      border-radius: 6px;
       text-align: center;
+      border: 1px solid #ffd70033;
+      transition: background 0.3s, transform 0.3s;
     }
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      background: #1a1f3b;
-      padding: 20px;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-
-    .project:hover {
+    .skills li:hover {
+      background: #5c0a0a;
       transform: scale(1.05);
     }
 
+    /* ====== PROJECTS ====== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: #330000;
+      padding: 25px;
+      border-radius: 8px;
+      border: 1px solid #ffd70033;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(255, 215, 0, 0.25);
+    }
+
     .project h3 {
-      color: #00d1ff;
+      color: #ffd700;
       margin-bottom: 10px;
     }
 
+    .project p {
+      color: #e6d9b8;
+    }
+
+    /* ====== CONTACT ====== */
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #fff5cc;
+    }
+
+    /* ====== FOOTER ====== */
     footer {
       text-align: center;
       padding: 20px;
-      background: #151829;
-      color: #888;
+      background: #2e0000;
+      color: #e6d9b8;
+      margin-top: 40px;
+      border-top: 1px solid #ffd70033;
     }
 
     @media (max-width: 600px) {
@@ -124,7 +198,7 @@
 </head>
 <body>
   <header>
-    <h1>Alex Nova</h1>
+    <h1>Rico Jade Concepcion</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -134,24 +208,24 @@
   </header>
 
   <section class="hero">
-    <h2>Hi, I'm Alex Nova</h2>
-    <p>A creative developer blending design, technology, and storytelling to build engaging digital experiences.</p>
+    <h2>Hello, I'm Rico Jade Concepcion</h2>
+    <p>A passionate web developer and designer who blends creativity and code to craft meaningful digital experiences.</p>
   </section>
 
-  <section id="about" class="section">
+  <section id="about" class="section about">
     <h2>About Me</h2>
-    <p>I'm a multidisciplinary web developer and designer with a passion for clean, functional, and visually striking interfaces. I love turning ideas into reality through code and creativity.</p>
+    <p>I'm a creative developer dedicated to building visually elegant and functional websites. My goal is to bring ideas to life with precision, design thinking, and a touch of artistry. I believe in continuous learning and creating with purpose.</p>
   </section>
 
   <section id="skills" class="section skills">
     <h2>Skills</h2>
     <ul>
-      <li>HTML & CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node.js</li>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript (ES6+)</li>
+      <li>React.js</li>
+      <li>Python</li>
       <li>UI/UX Design</li>
-      <li>Figma</li>
+      <li>Figma & Adobe XD</li>
     </ul>
   </section>
 
@@ -160,26 +234,27 @@
     <div class="projects">
       <div class="project">
         <h3>Portfolio Website</h3>
-        <p>A responsive personal portfolio built with modern HTML, CSS, and JavaScript.</p>
+        <p>A modern maroon-and-gold themed portfolio built to showcase creativity and web development skills.</p>
       </div>
       <div class="project">
-        <h3>Weather App</h3>
-        <p>A simple weather application using OpenWeather API and clean UI design.</p>
+        <h3>Luxury Brand Landing Page</h3>
+        <p>A premium website design with elegant gold accents and fluid animations for a fictional jewelry brand.</p>
       </div>
       <div class="project">
-        <h3>Task Manager</h3>
-        <p>A productivity web app with local storage, custom categories, and dark mode.</p>
+        <h3>Interactive Resume App</h3>
+        <p>A dynamic resume web app allowing users to explore experiences and projects interactively.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="contact" class="section contact">
     <h2>Contact</h2>
-    <p>Let’s connect! Reach me at <a href="mailto:alexnova@email.com" style="color:#00d1ff;">alexnova@email.com</a>.</p>
+    <p>Let’s connect and create something exceptional together!</p>
+    <p><a href="mailto:ricojadeconcepcion@email.com">ricojadeconcepcion@email.com</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Alex Nova. All rights reserved.</p>
+    <p>© 2025 Rico Jade Concepcion | Designed with ❤️ in Maroon & Gold</p>
   </footer>
 </body>
 </html>
