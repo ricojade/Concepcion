@@ -1,28 +1,9 @@
-
-Would you like me to:
-
-add animations / transitions,
-
-or make it a multi-page version (Home, About, Projects, Contact pages)?
-
-
-
-You said:
-I AM RICO JADE CONCEPCION CREATE A PORTFOLIO
-
-ChatGPT said:
-Perfect! Let’s make a clean, modern HTML portfolio for you — Rico Jade Concepcion 🎨
-
-Here’s a fully functional and stylish single-page portfolio (ready to use or upload anywhere like GitHub Pages, Netlify, or your own domain):
-
-html
-Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rico Jade Concepcion | Portfolio</title>
+  <title>Alex Nova | Creative Developer</title>
   <style>
     * {
       margin: 0;
@@ -32,10 +13,9 @@ Copy code
     }
 
     body {
-      background-color: #0e101a;
-      color: #f5f5f5;
+      background-color: #0f111a;
+      color: #fff;
       line-height: 1.6;
-      scroll-behavior: smooth;
     }
 
     header {
@@ -73,19 +53,17 @@ Copy code
       justify-content: center;
       align-items: center;
       text-align: center;
-      background: linear-gradient(135deg, #0f1226, #111c3d);
+      background: linear-gradient(135deg, #111428, #0f1a3d);
     }
 
     .hero h2 {
       font-size: 3rem;
       margin-bottom: 10px;
-      color: #00d1ff;
     }
 
     .hero p {
       max-width: 600px;
       color: #ccc;
-      font-size: 1.1rem;
     }
 
     .section {
@@ -94,25 +72,11 @@ Copy code
       margin: auto;
     }
 
-    .section h2 {
-      color: #00d1ff;
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2rem;
-    }
-
-    .about p {
-      text-align: center;
-      font-size: 1.1rem;
-      color: #ddd;
-    }
-
     .skills ul {
       list-style: none;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 10px;
-      margin-top: 30px;
     }
 
     .skills li {
@@ -132,12 +96,11 @@ Copy code
       background: #1a1f3b;
       padding: 20px;
       border-radius: 8px;
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: transform 0.3s;
     }
 
     .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 209, 255, 0.3);
+      transform: scale(1.05);
     }
 
     .project h3 {
@@ -145,26 +108,11 @@ Copy code
       margin-bottom: 10px;
     }
 
-    .contact {
-      text-align: center;
-    }
-
-    .contact a {
-      color: #00d1ff;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
       background: #151829;
       color: #888;
-      margin-top: 40px;
     }
 
     @media (max-width: 600px) {
@@ -176,7 +124,7 @@ Copy code
 </head>
 <body>
   <header>
-    <h1>Rico Jade Concepcion</h1>
+    <h1>Alex Nova</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -186,13 +134,13 @@ Copy code
   </header>
 
   <section class="hero">
-    <h2>Hello, I'm Rico Jade Concepcion</h2>
-    <p>A passionate creator who blends technology and design to build modern, engaging web experiences.</p>
+    <h2>Hi, I'm Alex Nova</h2>
+    <p>A creative developer blending design, technology, and storytelling to build engaging digital experiences.</p>
   </section>
 
-  <section id="about" class="section about">
+  <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I'm a motivated web developer and creative thinker who loves turning ideas into interactive digital products. I enjoy learning new tools, refining my craft, and building solutions that make life easier and more beautiful.</p>
+    <p>I'm a multidisciplinary web developer and designer with a passion for clean, functional, and visually striking interfaces. I love turning ideas into reality through code and creativity.</p>
   </section>
 
   <section id="skills" class="section skills">
@@ -201,9 +149,9 @@ Copy code
       <li>HTML & CSS</li>
       <li>JavaScript</li>
       <li>React</li>
-      <li>Python</li>
+      <li>Node.js</li>
       <li>UI/UX Design</li>
-      <li>Graphic Design</li>
+      <li>Figma</li>
     </ul>
   </section>
 
@@ -211,28 +159,27 @@ Copy code
     <h2>Projects</h2>
     <div class="projects">
       <div class="project">
-        <h3>Personal Portfolio</h3>
-        <p>A responsive personal portfolio website showcasing my skills, projects, and contact information.</p>
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built with modern HTML, CSS, and JavaScript.</p>
       </div>
       <div class="project">
-        <h3>Creative Studio Landing Page</h3>
-        <p>A sleek landing page designed for a digital creative agency, emphasizing design and animation.</p>
+        <h3>Weather App</h3>
+        <p>A simple weather application using OpenWeather API and clean UI design.</p>
       </div>
       <div class="project">
-        <h3>Task Organizer App</h3>
-        <p>A simple web-based to-do list application built with JavaScript and local storage support.</p>
+        <h3>Task Manager</h3>
+        <p>A productivity web app with local storage, custom categories, and dark mode.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Interested in collaborating or just saying hello? Reach me at:</p>
-    <p><a href="mailto:ricojadeconcepcion@email.com">ricojadeconcepcion@email.com</a></p>
+    <p>Let’s connect! Reach me at <a href="mailto:alexnova@email.com" style="color:#00d1ff;">alexnova@email.com</a>.</p>
   </section>
 
   <footer>
-    <p>© 2025 Rico Jade Concepcion. All rights reserved.</p>
+    <p>© 2025 Alex Nova. All rights reserved.</p>
   </footer>
 </body>
 </html>
